@@ -1,0 +1,85 @@
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: rgb(45, 45, 45);
+}
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 3px;
+}
+
+.komorka {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  cursor: pointer;
+  font-size: 40px;
+  color: #ffffff;
+  border: 2px solid #ddd;
+}
+
+.komorka:hover {
+  background-color: #8f8f8f;
+  transition: 0.25s;
+}
+
+.komorka:active {
+  background-color: #565555;
+  transition: 0.25s;
+}
+
+.EndGry {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-shadow: -1px 5px 4px rgba(0, 0, 0, 1);
+}
+#PlayAgain {
+  display: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#PlayAgain.show {
+  display: block;
+}
+#PlayAgain:hover {
+  background-color: #1a1919;
+  transition: 0.15s;
+  color: red;
+}
+#PlayAgain:active {
+  background-color: rgb(67, 67, 67);
+  transition: 0.3s;
+}
